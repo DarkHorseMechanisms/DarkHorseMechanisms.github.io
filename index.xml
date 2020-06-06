@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DarkHorseMechanisms</title>
+    <link>https://darkhorsemechanisms.github.io./</link>
+    <description>Recent content on DarkHorseMechanisms</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2020</copyright>
+    
+	<atom:link href="https://darkhorsemechanisms.github.io./index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
