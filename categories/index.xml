@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on DarkHorseMechanisms</title>
+    <title>Categories on DrkHrsMchnsms</title>
+    
+    
+    
     <link>https://darkhorsemechanisms.github.io./categories/</link>
-    <description>Recent content in Categories on DarkHorseMechanisms</description>
+    <description>Recent content in Categories on DrkHrsMchnsms</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>All rights reserved - 2020</copyright>
+    <copyright>false</copyright>
     
 	<atom:link href="https://darkhorsemechanisms.github.io./categories/index.xml" rel="self" type="application/rss+xml" />
     
