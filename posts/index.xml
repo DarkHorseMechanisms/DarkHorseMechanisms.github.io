@@ -1,0 +1,48 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on DarkHorseMechanisms</title>
+		<link>https://darkhorsemechanisms.github.io./posts/</link>
+		<description>Recent content in Posts on DarkHorseMechanisms</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Tue, 09 Jun 2020 07:32:22 +0100</lastBuildDate>
+		<atom:link href="https://darkhorsemechanisms.github.io./posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Links</title>
+			<link>https://darkhorsemechanisms.github.io./posts/links/</link>
+			<pubDate>Tue, 09 Jun 2020 07:32:22 +0100</pubDate>
+			
+			<guid>https://darkhorsemechanisms.github.io./posts/links/</guid>
+			<description>This should be a list page.</description>
+			<content type="html"><![CDATA[<p>This should be a list page.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Test</title>
+			<link>https://darkhorsemechanisms.github.io./posts/writing/test/</link>
+			<pubDate>Tue, 09 Jun 2020 05:03:08 +0100</pubDate>
+			
+			<guid>https://darkhorsemechanisms.github.io./posts/writing/test/</guid>
+			<description>testytesttest</description>
+			<content type="html"><![CDATA[<p>testytesttest</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>About</title>
+			<link>https://darkhorsemechanisms.github.io./posts/about/</link>
+			<pubDate>Mon, 08 Jun 2020 15:20:17 +0100</pubDate>
+			
+			<guid>https://darkhorsemechanisms.github.io./posts/about/</guid>
+			<description>This is a website built to store, organise and share all the work associated with the DarkHorseMechanisms project. As well as my own work, it contains a useful link library - selections from my own bookmarks stored here for my use and yours. Almost all of the resources and links are free or contain free content.
+This site was made using Hugo, a static (load-once) website generator. It is hosted on GitHub pages.</description>
+			<content type="html"><![CDATA[<p>This is a website built to store, organise and share all the work associated with the DarkHorseMechanisms project. As well as my own work, it contains a useful <a href="/links">link library</a> - selections from my own bookmarks stored here for my use and yours. Almost all of the resources and links are free or contain free content.</p>
+<p>This site was made using Hugo, a static (load-once) website generator. It is hosted on GitHub pages. You can read about how to do this <a href="/writing/techblog/Hugo">here</a>. I used the wonderful <a href="https://themes.gohugo.io/hermit/">hermit</a> theme by track3, with my own cumulative modifications.</p>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>
