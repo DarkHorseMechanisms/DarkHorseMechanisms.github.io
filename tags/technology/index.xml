@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>untagged on DarkHorseMechanisms</title>
-    <link>https://darkhorsemechanisms.github.io./tags/untagged/</link>
-    <description>Recent content in untagged on DarkHorseMechanisms</description>
+    <title>Technology on DarkHorseMechanisms</title>
+    <link>https://darkhorsemechanisms.github.io./tags/technology/</link>
+    <description>Recent content in Technology on DarkHorseMechanisms</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Fri, 12 Jun 2020 02:58:05 +0100</lastBuildDate>
     
-	<atom:link href="https://darkhorsemechanisms.github.io./tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://darkhorsemechanisms.github.io./tags/technology/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,7 +18,7 @@
       <pubDate>Fri, 12 Jun 2020 02:58:05 +0100</pubDate>
       
       <guid>https://darkhorsemechanisms.github.io./posts/techblog/</guid>
-      <description>Testyculls</description>
+      <description>Documenting (parts of) my experiences as a learning programmer</description>
     </item>
     
   </channel>

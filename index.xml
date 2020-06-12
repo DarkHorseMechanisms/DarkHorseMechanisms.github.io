@@ -14,21 +14,11 @@
     
     <item>
       <title>Techblog</title>
-      <link>https://darkhorsemechanisms.github.io./posts/techblog/techblog/</link>
+      <link>https://darkhorsemechanisms.github.io./posts/techblog/</link>
       <pubDate>Fri, 12 Jun 2020 02:58:05 +0100</pubDate>
       
-      <guid>https://darkhorsemechanisms.github.io./posts/techblog/techblog/</guid>
-      <description>Testyculls</description>
-    </item>
-    
-    <item>
-      <title>Hugo and this Site</title>
-      <link>https://darkhorsemechanisms.github.io./posts/techblog/hugo/hugo/</link>
-      <pubDate>Wed, 10 Jun 2020 21:42:35 +0100</pubDate>
-      
-      <guid>https://darkhorsemechanisms.github.io./posts/techblog/hugo/hugo/</guid>
-      <description>I built this site using the Static Site Generator Hugo, and the Hermit theme by Track3.
-Why a Static Site? Static sites load once when accessed. This makes them cheap to serve. Services like Netifly and GitHub pages will serve your website for free. Additionally, because they lack dynamic elements (basically the &amp;lsquo;moving parts&amp;rsquo; of a modern website), they don&amp;rsquo;t need updating for security reasons or otherwise. I can &amp;ldquo;fire-and-forget&amp;rdquo; with this setup.</description>
+      <guid>https://darkhorsemechanisms.github.io./posts/techblog/</guid>
+      <description>Documenting (parts of) my experiences as a learning programmer</description>
     </item>
     
     <item>
@@ -49,9 +39,7 @@ Hard links to the subsections are in this post, the list below this post shows t
       <pubDate>Mon, 08 Jun 2020 15:20:17 +0100</pubDate>
       
       <guid>https://darkhorsemechanisms.github.io./posts/about/</guid>
-      <description>I built this website to store, organise and share all the work associated with the DarkHorseMechanisms project. This is a personal project with both fixed goals and creative freedom. It is part of my journey into programming.
-I&amp;rsquo;ve kept it relatively anonymous to preserve my ability to speak and create freely. I reserve my right to be wrong or otherwise offensive at any time.
-This website contains a useful link library - selections from my own bookmarks stored here for my use and yours.</description>
+      <description>I built this website to store, organise and share all my work for the DarkHorseMechanisms project. This is a creative project meant to house all of my output for professional and personal development. Some of it may not make sense to you, or it may offend you, or you may wonder why I&amp;rsquo;m doing some or any of it. Nevertheless it is here and you may read it. Some of it is art and I will try to make the distinction clear; when I&amp;rsquo;m talking about facts or my beliefs, or offering guidance, I am speaking sincerely and sometimes with great urgency.</description>
     </item>
     
   </channel>
