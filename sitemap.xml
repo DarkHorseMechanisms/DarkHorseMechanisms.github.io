@@ -4,7 +4,32 @@
   
   <url>
     <loc>https://darkhorsemechanisms.github.io./</loc>
-    <lastmod>2020-06-09T07:32:22+01:00</lastmod>
+    <lastmod>2020-06-12T02:58:05+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://darkhorsemechanisms.github.io./posts/</loc>
+    <lastmod>2020-06-12T02:58:05+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://darkhorsemechanisms.github.io./tags/</loc>
+    <lastmod>2020-06-12T02:58:05+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://darkhorsemechanisms.github.io./posts/techblog/techblog/</loc>
+    <lastmod>2020-06-12T02:58:05+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://darkhorsemechanisms.github.io./tags/untagged/</loc>
+    <lastmod>2020-06-12T02:58:05+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://darkhorsemechanisms.github.io./posts/techblog/hugo/hugo/</loc>
+    <lastmod>2020-06-10T21:42:35+01:00</lastmod>
   </url>
   
   <url>
@@ -13,22 +38,8 @@
   </url>
   
   <url>
-    <loc>https://darkhorsemechanisms.github.io./posts/</loc>
-    <lastmod>2020-06-09T07:32:22+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://darkhorsemechanisms.github.io./posts/writing/test/</loc>
-    <lastmod>2020-06-09T05:03:08+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://darkhorsemechanisms.github.io./posts/about/</loc>
     <lastmod>2020-06-08T15:20:17+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://darkhorsemechanisms.github.io./tags/</loc>
   </url>
   
 </urlset>
