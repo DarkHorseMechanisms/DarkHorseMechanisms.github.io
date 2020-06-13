@@ -7,19 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 12 Jun 2020 02:58:05 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 18:03:10 +0100</lastBuildDate>
     
 	<atom:link href="https://darkhorsemechanisms.github.io./index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Techblog</title>
-      <link>https://darkhorsemechanisms.github.io./posts/techblog/</link>
-      <pubDate>Fri, 12 Jun 2020 02:58:05 +0100</pubDate>
+      <title>Customising Hugo</title>
+      <link>https://darkhorsemechanisms.github.io./posts/techblog/customising-hugo/</link>
+      <pubDate>Sat, 13 Jun 2020 18:03:10 +0100</pubDate>
       
-      <guid>https://darkhorsemechanisms.github.io./posts/techblog/</guid>
-      <description>Documenting (parts of) my experience as a programmer.
-First post - Hugo and this site</description>
+      <guid>https://darkhorsemechanisms.github.io./posts/techblog/customising-hugo/</guid>
+      <description>In my previous post I guided you through how to use Hugo to make a site to deploy on GitHub. In this post I will show you how to go deeper with your customisations, and what you need to do to get the results you want.
+First you need to make a Hugo site to play with, and have Git and GitHub pages set up. This was all touched on in my previous techblog post.</description>
+    </item>
+    
+    <item>
+      <title>Hugo and this Site</title>
+      <link>https://darkhorsemechanisms.github.io./posts/techblog/hugo/</link>
+      <pubDate>Wed, 10 Jun 2020 21:42:35 +0100</pubDate>
+      
+      <guid>https://darkhorsemechanisms.github.io./posts/techblog/hugo/</guid>
+      <description>I built this site using the Static Site Generator Hugo, and the Hermit theme by Track3.
+Why a Static Site? Static sites load once when accessed. This makes them cheap to serve. Services like Netifly and GitHub pages will serve your website for free. Additionally, because they lack dynamic elements (basically the &amp;lsquo;moving parts&amp;rsquo; of a modern website), they don&amp;rsquo;t need updating for security reasons or otherwise. I can &amp;ldquo;fire-and-forget&amp;rdquo; with this setup.</description>
     </item>
     
     <item>

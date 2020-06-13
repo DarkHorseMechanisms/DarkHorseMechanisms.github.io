@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TechBlog on DarkHorseMechanisms</title>
+    <link>https://darkhorsemechanisms.github.io./tags/techblog/</link>
+    <description>Recent content in TechBlog on DarkHorseMechanisms</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 13 Jun 2020 18:03:10 +0100</lastBuildDate>
+    
+	<atom:link href="https://darkhorsemechanisms.github.io./tags/techblog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Customising Hugo</title>
+      <link>https://darkhorsemechanisms.github.io./posts/techblog/customising-hugo/</link>
+      <pubDate>Sat, 13 Jun 2020 18:03:10 +0100</pubDate>
+      
+      <guid>https://darkhorsemechanisms.github.io./posts/techblog/customising-hugo/</guid>
+      <description>In my previous post I guided you through how to use Hugo to make a site to deploy on GitHub. In this post I will show you how to go deeper with your customisations, and what you need to do to get the results you want.
+First you need to make a Hugo site to play with, and have Git and GitHub pages set up. This was all touched on in my previous techblog post.</description>
+    </item>
+    
+  </channel>
+</rss>

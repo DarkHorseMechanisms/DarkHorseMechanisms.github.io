@@ -3,28 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://darkhorsemechanisms.github.io./posts/techblog/customising-hugo/</loc>
+    <lastmod>2020-06-13T18:03:10+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://darkhorsemechanisms.github.io./</loc>
-    <lastmod>2020-06-12T02:58:05+01:00</lastmod>
+    <lastmod>2020-06-13T18:03:10+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://darkhorsemechanisms.github.io./posts/</loc>
-    <lastmod>2020-06-12T02:58:05+01:00</lastmod>
+    <lastmod>2020-06-13T18:03:10+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://darkhorsemechanisms.github.io./tags/</loc>
-    <lastmod>2020-06-12T02:58:05+01:00</lastmod>
+    <lastmod>2020-06-13T18:03:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://darkhorsemechanisms.github.io./posts/techblog/</loc>
-    <lastmod>2020-06-12T02:58:05+01:00</lastmod>
+    <loc>https://darkhorsemechanisms.github.io./tags/techblog/</loc>
+    <lastmod>2020-06-13T18:03:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://darkhorsemechanisms.github.io./tags/technology/</loc>
-    <lastmod>2020-06-12T02:58:05+01:00</lastmod>
+    <loc>https://darkhorsemechanisms.github.io./posts/techblog/hugo/</loc>
+    <lastmod>2020-06-10T21:42:35+01:00</lastmod>
   </url>
   
   <url>

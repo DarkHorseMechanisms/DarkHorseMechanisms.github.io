@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#000000">
+	<meta name="msapplication-TileColor" content="#000000">
+<meta itemprop="name" content="Customising Hugo">
+<meta itemprop="description" content="In my previous post I guided you through how to use Hugo to make a site to deploy on GitHub. In this post I will show you how to go deeper with your customisations, and what you need to do to get the results you want.
+First you need to make a Hugo site to play with, and have Git and GitHub pages set up. This was all touched on in my previous techblog post.">
+<meta itemprop="datePublished" content="2020-06-13T18:03:10&#43;01:00" />
+<meta itemprop="dateModified" content="2020-06-13T18:03:10&#43;01:00" />
+<meta itemprop="wordCount" content="817">
+
+
+
+<meta itemprop="keywords" content="TechBlog," /><meta property="og:title" content="Customising Hugo" />
+<meta property="og:description" content="In my previous post I guided you through how to use Hugo to make a site to deploy on GitHub. In this post I will show you how to go deeper with your customisations, and what you need to do to get the results you want.
+First you need to make a Hugo site to play with, and have Git and GitHub pages set up. This was all touched on in my previous techblog post." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://darkhorsemechanisms.github.io./posts/techblog/customising-hugo/" />
+<meta property="article:published_time" content="2020-06-13T18:03:10+01:00" />
+<meta property="article:modified_time" content="2020-06-13T18:03:10+01:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Customising Hugo"/>
+<meta name="twitter:description" content="In my previous post I guided you through how to use Hugo to make a site to deploy on GitHub. In this post I will show you how to go deeper with your customisations, and what you need to do to get the results you want.
+First you need to make a Hugo site to play with, and have Git and GitHub pages set up. This was all touched on in my previous techblog post."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../favicon32x32.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../favicon16x16.ico">
+	<link rel="manifest" href="../../../site.webmanifest">
+	<link rel="mask-icon" href="../../../safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="../../../favicon32x32.ico">
+
+	<title>Customising Hugo</title>
+	
+	<link rel="stylesheet" href="https://darkhorsemechanisms.github.io./css/style.min.7eaf1f5049d6a7816029c797fc170f06f80dc41c9bfd11f7152e5345db1e745e.css" integrity="sha256-fq8fUEnWp4FgKceX/BcPBvgNxByb/RH3FS5TRdsedF4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://darkhorsemechanisms.github.io./">DarkHorseMechanisms</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://darkhorsemechanisms.github.io./posts/techblog/">TechBlog</a>
+				<a href="https://darkhorsemechanisms.github.io./posts/links/">Links</a>
+				<a href="https://darkhorsemechanisms.github.io./posts/">Posts</a>
+				<a href="https://darkhorsemechanisms.github.io./posts/about/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/DarkMechanisms" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://github.com/DarkHorseMechanisms" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://reddit.com/u/DarkHorseMechanisms" target="_blank" rel="noopener me" title="Reddit"><svg svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" class="feather" width="60" height="60" viewBox="0 0 30 30" fill="none" stroke="currentColor" id="Bold" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="m21.325 9.308c-.758 0-1.425.319-1.916.816-1.805-1.268-4.239-2.084-6.936-2.171l1.401-6.406 4.461 1.016c0 1.108.89 2.013 1.982 2.013 1.113 0 2.008-.929 2.008-2.038s-.889-2.038-2.007-2.038c-.779 0-1.451.477-1.786 1.129l-4.927-1.108c-.248-.067-.491.113-.557.365l-1.538 7.062c-2.676.113-5.084.928-6.895 2.197-.491-.518-1.184-.837-1.942-.837-2.812 0-3.733 3.829-1.158 5.138-.091.405-.132.837-.132 1.268 0 4.301 4.775 7.786 10.638 7.786 5.888 0 10.663-3.485 10.663-7.786 0-.431-.045-.883-.156-1.289 2.523-1.314 1.594-5.115-1.203-5.117zm-15.724 5.41c0-1.129.89-2.038 2.008-2.038 1.092 0 1.983.903 1.983 2.038 0 1.109-.89 2.013-1.983 2.013-1.113.005-2.008-.904-2.008-2.013zm10.839 4.798c-1.841 1.868-7.036 1.868-8.878 0-.203-.18-.203-.498 0-.703.177-.18.491-.18.668 0 1.406 1.463 6.07 1.488 7.537 0 .177-.18.491-.18.668 0 .207.206.207.524.005.703zm-.041-2.781c-1.092 0-1.982-.903-1.982-2.011 0-1.129.89-2.038 1.982-2.038 1.113 0 2.008.903 2.008 2.038-.005 1.103-.895 2.011-2.008 2.011z"/></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://darkhorsemechanisms.github.io./posts/techblog/">TechBlog</a></li>
+			<li><a href="https://darkhorsemechanisms.github.io./posts/links/">Links</a></li>
+			<li><a href="https://darkhorsemechanisms.github.io./posts/">Posts</a></li>
+			<li><a href="https://darkhorsemechanisms.github.io./posts/about/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>Customising Hugo</h1>
+		<div class="content">
+			<p>In my previous post I guided you through how to use Hugo to make a site to deploy on GitHub. In this post I will show you how to go deeper with your customisations, and what you need to do to get the results you want.</p>
+<p>First you need to make a Hugo site to play with, and have Git and GitHub pages set up. This was all touched on in <a href="../../../posts/techblog/hugo">my previous techblog post</a>. At the end of that post I gave a link to <a href="https://www.jakewiesler.com/blog/hugo-directory-structure/">Jake Weisler&rsquo;s wonderfully useful post</a> on understanding the Hugo directory structure. As far as I can tell it&rsquo;s a little outdated in places, so I&rsquo;m going to write about my experience and observations customising my Hugo theme in the hopes that is will help someone else.</p>
+<p>The first thing that you need to know is that you will be dealing with a lot of duplicate folder structures. But fear not, if you follow my guide you will be using only three duplicate structures. If you followed my guide in the previous page, you will now have:</p>
+<ol>
+<li>A site generated in your &lsquo;output&rsquo; folder. We will use this to check what happens when you make changes in the other places. <strong>It doesn&rsquo;t matter for generation</strong> and so put it on the right of your screen so you can use it as part of your checks.</li>
+<li>A &lsquo;content&rsquo; folder that contains some metadata files for Hugo to convert into HTML. This may need a subdirectory for your posts to be organised into, depending on what your theme needs.</li>
+<li>A customised config file.</li>
+<li>A &lsquo;theme&rsquo; folder containing all the other information used to generate your site.</li>
+</ol>
+<p>What we are going to do at this point is pull all of the theme information out, and place it into more accessible folders. This will leave the relevant theme folders empty - this is fine, because all the information will still be available to Hugo automatically in its new locations. Additionally, you should have a backup copy of your themes in storage so that you can refer to the original files or copy them back over. However I recommend that from this point, you only work with the files in the new locations that I&rsquo;ll specify. This will keep duplication to a minimum and so remove some of the confusion that can occur with cause and effect when using Hugo.</p>
+<p>First, cut the &lsquo;layouts&rsquo;, &lsquo;assets&rsquo;, and &lsquo;static&rsquo; folders from your theme, and put them in your site&rsquo;s root directory (which contains your config file). &lsquo;Layouts&rsquo; contains the html templates used to make your site. These should be structured as a mirror to your content folder - you will notice that failure to do that will mean that your content is not produced, or if it is, it may be produced using an undesired HTML template.</p>
+<ul>
+<li>The &lsquo;partials&rsquo; directory holds prewritten HTML that is used to make insertions in other pages. It may also contain SVG files and other icons. It is useful to know that the &lsquo;header.html&rsquo; file is often where other functionality is held, such as holding the references to which icons will be used for the site&rsquo;s tab.</li>
+<li>The &lsquo;_default&rsquo; directory holds backup data for page generation which is used in some cases as a first reference, and sometimes as a backup for missing files.</li>
+<li>Also in here are your 404 and homepage (index) layouts.</li>
+</ul>
+<p>Your &lsquo;static&rsquo; folder will hold all your images and other files that you want fed forward into your site without change.</p>
+<p>Your &lsquo;assets&rsquo; folder is the most useful for overall personalisation. It contains your CSS generation file, which you can change to produce style changes in your sheets. I haven&rsquo;t much experience with this (or web dev in general) so I can&rsquo;t guide you much with specific changes, but I can guide you a little bit through the likely structure of these files.</p>
+<ul>
+<li>In the Hermit theme, the &lsquo;assets/scss&rsquo; folder holds &lsquo;_predefined.css&rsquo;, which defines the colours used in the rest of the CSS. I made changes here that carry forward to the rest of the style info - although I didn&rsquo;t change the colours&rsquo; string names. I imagine this is not good practice but I wasn&rsquo;t about to do a find and replace on all files present (and then possibly still miss some changes in the HTML). For my purposes this worked well enough.</li>
+<li>The main style info is contained in &lsquo;style.css&rsquo;. I can&rsquo;t advise you here, getting into CSS is not my purpose, but anyone willing to go digging in their file and google a few things can figure it out.</li>
+</ul>
+<p>There should also be a js folder containing your site&rsquo;s javascript. Again this is not a specialty of mine, but if you want to find yours, you should find it there.</p>
+<p>I&rsquo;m going to finish there and I hope that anyone who finds this has found it useful!</p>
+
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="https://darkhorsemechanisms.github.io./">DarkHorseMechanisms</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://darkhorsemechanisms.github.io./posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://darkhorsemechanisms.github.io./js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

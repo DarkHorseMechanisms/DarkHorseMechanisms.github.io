@@ -1,67 +1,91 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Posts on DarkHorseMechanisms</title>
-		<link>https://darkhorsemechanisms.github.io./posts/</link>
-		<description>Recent content in Posts on DarkHorseMechanisms</description>
-		<generator>Hugo -- gohugo.io</generator>
-		<language>en</language>
-		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sat, 13 Jun 2020 18:03:10 +0100</lastBuildDate>
-		<atom:link href="https://darkhorsemechanisms.github.io./posts/index.xml" rel="self" type="application/rss+xml" />
-		
-		<item>
-			<title>Customising Hugo</title>
-			<link>https://darkhorsemechanisms.github.io./posts/techblog/customising-hugo/</link>
-			<pubDate>Sat, 13 Jun 2020 18:03:10 +0100</pubDate>
-			
-			<guid>https://darkhorsemechanisms.github.io./posts/techblog/customising-hugo/</guid>
-			<description>In my previous post I guided you through how to use Hugo to make a site to deploy on GitHub. In this post I will show you how to go deeper with your customisations, and what you need to do to get the results you want.
-First you need to make a Hugo site to play with, and have Git and GitHub pages set up. This was all touched on in my previous techblog post.</description>
-			<content type="html"><![CDATA[<p>In my previous post I guided you through how to use Hugo to make a site to deploy on GitHub. In this post I will show you how to go deeper with your customisations, and what you need to do to get the results you want.</p>
-<p>First you need to make a Hugo site to play with, and have Git and GitHub pages set up. This was all touched on in <a href="/posts/techblog/hugo">my previous techblog post</a>. At the end of that post I gave a link to <a href="https://www.jakewiesler.com/blog/hugo-directory-structure/">Jake Weisler&rsquo;s wonderfully useful post</a> on understanding the Hugo directory structure. As far as I can tell it&rsquo;s a little outdated in places, so I&rsquo;m going to write about my experience and observations customising my Hugo theme in the hopes that is will help someone else.</p>
-<p>The first thing that you need to know is that you will be dealing with a lot of duplicate folder structures. But fear not, if you follow my guide you will be using only three duplicate structures. If you followed my guide in the previous page, you will now have:</p>
-<ol>
-<li>A site generated in your &lsquo;output&rsquo; folder. We will use this to check what happens when you make changes in the other places. <strong>It doesn&rsquo;t matter for generation</strong> and so put it on the right of your screen so you can use it as part of your checks.</li>
-<li>A &lsquo;content&rsquo; folder that contains some metadata files for Hugo to convert into HTML. This may need a subdirectory for your posts to be organised into, depending on what your theme needs.</li>
-<li>A customised config file.</li>
-<li>A &lsquo;theme&rsquo; folder containing all the other information used to generate your site.</li>
-</ol>
-<p>What we are going to do at this point is pull all of the theme information out, and place it into more accessible folders. This will leave the relevant theme folders empty - this is fine, because all the information will still be available to Hugo automatically in its new locations. Additionally, you should have a backup copy of your themes in storage so that you can refer to the original files or copy them back over. However I recommend that from this point, you only work with the files in the new locations that I&rsquo;ll specify. This will keep duplication to a minimum and so remove some of the confusion that can occur with cause and effect when using Hugo.</p>
-<p>First, cut the &lsquo;layouts&rsquo;, &lsquo;assets&rsquo;, and &lsquo;static&rsquo; folders from your theme, and put them in your site&rsquo;s root directory (which contains your config file). &lsquo;Layouts&rsquo; contains the html templates used to make your site. These should be structured as a mirror to your content folder - you will notice that failure to do that will mean that your content is not produced, or if it is, it may be produced using an undesired HTML template.</p>
-<ul>
-<li>The &lsquo;partials&rsquo; directory holds prewritten HTML that is used to make insertions in other pages. It may also contain SVG files and other icons. It is useful to know that the &lsquo;header.html&rsquo; file is often where other functionality is held, such as holding the references to which icons will be used for the site&rsquo;s tab.</li>
-<li>The &lsquo;_default&rsquo; directory holds backup data for page generation which is used in some cases as a first reference, and sometimes as a backup for missing files.</li>
-<li>Also in here are your 404 and homepage (index) layouts.</li>
-</ul>
-<p>Your &lsquo;static&rsquo; folder will hold all your images and other files that you want fed forward into your site without change.</p>
-<p>Your &lsquo;assets&rsquo; folder is the most useful for overall personalisation. It contains your CSS generation file, which you can change to produce style changes in your sheets. I haven&rsquo;t much experience with this (or web dev in general) so I can&rsquo;t guide you much with specific changes, but I can guide you a little bit through the likely structure of these files.</p>
-<ul>
-<li>In the Hermit theme, the &lsquo;assets/scss&rsquo; folder holds &lsquo;_predefined.css&rsquo;, which defines the colours used in the rest of the CSS. I made changes here that carry forward to the rest of the style info - although I didn&rsquo;t change the colours&rsquo; string names. I imagine this is not good practice but I wasn&rsquo;t about to do a find and replace on all files present (and then possibly still miss some changes in the HTML). For my purposes this worked well enough.</li>
-<li>The main style info is contained in &lsquo;style.css&rsquo;. I can&rsquo;t advise you here, getting into CSS is not my purpose, but anyone willing to go digging in their file and google a few things can figure it out.</li>
-</ul>
-<p>There should also be a js folder containing your site&rsquo;s javascript. Again this is not a specialty of mine, but if you want to find yours, you should find it there.</p>
-<p>I&rsquo;m going to finish there and I hope that anyone who finds this has found it useful!</p>
-]]></content>
-		</item>
-		
-		<item>
-			<title>Hugo and this Site</title>
-			<link>https://darkhorsemechanisms.github.io./posts/techblog/hugo/</link>
-			<pubDate>Wed, 10 Jun 2020 21:42:35 +0100</pubDate>
-			
-			<guid>https://darkhorsemechanisms.github.io./posts/techblog/hugo/</guid>
-			<description>I built this site using the Static Site Generator Hugo, and the Hermit theme by Track3.
-Why a Static Site? Static sites load once when accessed. This makes them cheap to serve. Services like Netifly and GitHub pages will serve your website for free. Additionally, because they lack dynamic elements (basically the &amp;lsquo;moving parts&amp;rsquo; of a modern website), they don&amp;rsquo;t need updating for security reasons or otherwise. I can &amp;ldquo;fire-and-forget&amp;rdquo; with this setup.</description>
-			<content type="html"><![CDATA[<p>I built this site using the Static Site Generator <a href="https://gohugo.io">Hugo</a>, and the Hermit theme by Track3.</p>
-<h3 id="why-a-static-site">Why a Static Site?</h3>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#000000">
+	<meta name="msapplication-TileColor" content="#000000">
+<meta itemprop="name" content="Hugo and this Site">
+<meta itemprop="description" content="I built this site using the Static Site Generator Hugo, and the Hermit theme by Track3.
+Why a Static Site? Static sites load once when accessed. This makes them cheap to serve. Services like Netifly and GitHub pages will serve your website for free. Additionally, because they lack dynamic elements (basically the &lsquo;moving parts&rsquo; of a modern website), they don&rsquo;t need updating for security reasons or otherwise. I can &ldquo;fire-and-forget&rdquo; with this setup.">
+<meta itemprop="datePublished" content="2020-06-10T21:42:35&#43;01:00" />
+<meta itemprop="dateModified" content="2020-06-10T21:42:35&#43;01:00" />
+<meta itemprop="wordCount" content="2431">
+
+
+
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Hugo and this Site" />
+<meta property="og:description" content="I built this site using the Static Site Generator Hugo, and the Hermit theme by Track3.
+Why a Static Site? Static sites load once when accessed. This makes them cheap to serve. Services like Netifly and GitHub pages will serve your website for free. Additionally, because they lack dynamic elements (basically the &lsquo;moving parts&rsquo; of a modern website), they don&rsquo;t need updating for security reasons or otherwise. I can &ldquo;fire-and-forget&rdquo; with this setup." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://darkhorsemechanisms.github.io./posts/techblog/hugo/" />
+<meta property="article:published_time" content="2020-06-10T21:42:35+01:00" />
+<meta property="article:modified_time" content="2020-06-10T21:42:35+01:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo and this Site"/>
+<meta name="twitter:description" content="I built this site using the Static Site Generator Hugo, and the Hermit theme by Track3.
+Why a Static Site? Static sites load once when accessed. This makes them cheap to serve. Services like Netifly and GitHub pages will serve your website for free. Additionally, because they lack dynamic elements (basically the &lsquo;moving parts&rsquo; of a modern website), they don&rsquo;t need updating for security reasons or otherwise. I can &ldquo;fire-and-forget&rdquo; with this setup."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../favicon32x32.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../favicon16x16.ico">
+	<link rel="manifest" href="../../../site.webmanifest">
+	<link rel="mask-icon" href="../../../safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="../../../favicon32x32.ico">
+
+	<title>Hugo and this Site</title>
+	
+	<link rel="stylesheet" href="https://darkhorsemechanisms.github.io./css/style.min.7eaf1f5049d6a7816029c797fc170f06f80dc41c9bfd11f7152e5345db1e745e.css" integrity="sha256-fq8fUEnWp4FgKceX/BcPBvgNxByb/RH3FS5TRdsedF4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://darkhorsemechanisms.github.io./">DarkHorseMechanisms</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://darkhorsemechanisms.github.io./posts/techblog/">TechBlog</a>
+				<a href="https://darkhorsemechanisms.github.io./posts/links/">Links</a>
+				<a href="https://darkhorsemechanisms.github.io./posts/">Posts</a>
+				<a href="https://darkhorsemechanisms.github.io./posts/about/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/DarkMechanisms" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://github.com/DarkHorseMechanisms" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://reddit.com/u/DarkHorseMechanisms" target="_blank" rel="noopener me" title="Reddit"><svg svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" class="feather" width="60" height="60" viewBox="0 0 30 30" fill="none" stroke="currentColor" id="Bold" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="m21.325 9.308c-.758 0-1.425.319-1.916.816-1.805-1.268-4.239-2.084-6.936-2.171l1.401-6.406 4.461 1.016c0 1.108.89 2.013 1.982 2.013 1.113 0 2.008-.929 2.008-2.038s-.889-2.038-2.007-2.038c-.779 0-1.451.477-1.786 1.129l-4.927-1.108c-.248-.067-.491.113-.557.365l-1.538 7.062c-2.676.113-5.084.928-6.895 2.197-.491-.518-1.184-.837-1.942-.837-2.812 0-3.733 3.829-1.158 5.138-.091.405-.132.837-.132 1.268 0 4.301 4.775 7.786 10.638 7.786 5.888 0 10.663-3.485 10.663-7.786 0-.431-.045-.883-.156-1.289 2.523-1.314 1.594-5.115-1.203-5.117zm-15.724 5.41c0-1.129.89-2.038 2.008-2.038 1.092 0 1.983.903 1.983 2.038 0 1.109-.89 2.013-1.983 2.013-1.113.005-2.008-.904-2.008-2.013zm10.839 4.798c-1.841 1.868-7.036 1.868-8.878 0-.203-.18-.203-.498 0-.703.177-.18.491-.18.668 0 1.406 1.463 6.07 1.488 7.537 0 .177-.18.491-.18.668 0 .207.206.207.524.005.703zm-.041-2.781c-1.092 0-1.982-.903-1.982-2.011 0-1.129.89-2.038 1.982-2.038 1.113 0 2.008.903 2.008 2.038-.005 1.103-.895 2.011-2.008 2.011z"/></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://darkhorsemechanisms.github.io./posts/techblog/">TechBlog</a></li>
+			<li><a href="https://darkhorsemechanisms.github.io./posts/links/">Links</a></li>
+			<li><a href="https://darkhorsemechanisms.github.io./posts/">Posts</a></li>
+			<li><a href="https://darkhorsemechanisms.github.io./posts/about/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>Hugo and this Site</h1>
+		<div class="content">
+			<p>I built this site using the Static Site Generator <a href="https://gohugo.io">Hugo</a>, and the Hermit theme by Track3.</p>
+<h3 id="why-a-static-site">Why a Static Site?<a href="#why-a-static-site" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Static sites load once when accessed. This makes them cheap to serve. Services like Netifly and GitHub pages will serve your website for free. Additionally, because they lack dynamic elements (basically the &lsquo;moving parts&rsquo; of a modern website), they don&rsquo;t need updating for security reasons or otherwise. I can &ldquo;fire-and-forget&rdquo; with this setup. Additionally, as a new web dev (if you can even call me that), static sites probably represent the simplest route from knowing nothing to having a functioning site.</p>
-<h3 id="why-use-hugo">Why use Hugo?</h3>
+<h3 id="why-use-hugo">Why use Hugo?<a href="#why-use-hugo" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Jekyll is the &lsquo;default&rsquo; for GitHub pages but aside from GitHub&rsquo;s guidance on Jekyll being more available, Hugo was no more difficult to use and much less difficult to install. In fact, my first choice - on the basis of a Slant comparison promising an active community - was Pelican. I was biased towards this choice because I&rsquo;m a new programmer and I&rsquo;m trying to focus on Python. Additionally, if possible, I want to present functioning Python code in my site. I don&rsquo;t know yet if you can do that using Pelican, but in the meantime I have found PythonAnywhere, to which I can link from this site if I want to present running code, or if it is possible I can use Pelican later to generate the relevant pages. The first versions of this site were made using Pelican but I found the available information unsatisfactory and often out of date. I migrated to Hugo because looking further into comparison sites, it seemed like Hugo has a slight edge in speed. I don&rsquo;t know whether it was an effect of my experience from learning Pelican but I found Hugo much easier, although still difficult enough as a new programmer, to get on with. Other SSGs include Gatsby, which looks good for sites like this, and NextJS, which looks good for commercial sites.</p>
 <p>I didn&rsquo;t want to use Wix and ilk:</p>
 <blockquote>
 <p>I don&rsquo;t care if it hurts, I wanna have control.</p>
 </blockquote>
-<h3 id="why-write-this-guide">Why write this guide?</h3>
+<h3 id="why-write-this-guide">Why write this guide?<a href="#why-write-this-guide" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>It&rsquo;s partly a record for me, partly a writing exercise, partly trying to help others who might struggle like I did when coming in with no experience. Other guides will be more granular and this should be a supplement to those. Here I&rsquo;ll try to stick to a readable recipe format that will produce results and leave the reader with a holistic understanding of what&rsquo;s going on.</p>
 <p>Disadvantages of this guide:</p>
 <ol>
@@ -74,7 +98,7 @@ Why a Static Site? Static sites load once when accessed. This makes them cheap t
 <li>It is up-to-date as of June 10th 2020, where I found other guides to be outdated.</li>
 <li>I try to use simple language to explain complicated things. I&rsquo;m a native English speaker. I&rsquo;m using a recipe-esque format and I&rsquo;m keeping my former self/an ignorant hypthetical naive reader in mind.</li>
 </ol>
-<h3 id="how-exactly-did-you-go-about-making-this-site">How exactly did you go about making this site?</h3>
+<h3 id="how-exactly-did-you-go-about-making-this-site">How exactly did you go about making this site?<a href="#how-exactly-did-you-go-about-making-this-site" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>If you&rsquo;re fully following along with this guide and want to use GitHub pages, you&rsquo;ll need to have and know how to use Git and a GitHub account. To make and work on a test site for later deployment requires only Hugo itself.</p>
 <p>First, I downloaded the appropriate Hugo binary from their website. This is where I made my first mistake - I downloaded the standard version for my system, but in fact I later found I needed the <em>extended</em> version. I recommend that you get the extended version, because it lets you rebuild CSS/SASS, which you will need for making and editing colour schemes. If you&rsquo;re using Windows, you can install a Linux version to WSL, and I recommend this option if you have WSL set up - so long as you can get GitHub ssh-connected, which I haven&rsquo;t managed yet, meaning I have to enter my password every time or run a separate terminal for git. It&rsquo;s possible that I could run both Hugo (Windows install?) and Git from GitBash. But I don&rsquo;t trust that method so I&rsquo;m running everything from Powershell, which is easy enough.
 Note: I installed using Chocolatey, but this isn&rsquo;t necessary or important for this guide.</p>
@@ -82,9 +106,9 @@ Note: I installed using Chocolatey, but this isn&rsquo;t necessary or important 
 <p>Next, from your downloaded themes, you&rsquo;ll want to choose one to work with. Fittingly, I liked the &lsquo;Hermit&rsquo; theme by Track3 and used it to build this site. Copy (don&rsquo;t cut and paste because you&rsquo;ll want a clean copy in storage!) the folder of the theme you like and navigate to the folder where you want to make your site. (I did this in the documents/GitHub folder that the GitHub for Windows program left behind on my computer. I&rsquo;m working on a more decentralised mindset (i.e. running Git in whatever folder necessary as it exists in my computer, rather than having a Git &lsquo;section&rsquo;. It&rsquo;s a holdover from the &lsquo;trying Git for the first time&rsquo; mindset)).</p>
 <p>Once you&rsquo;ve picked a location for your new site, open a command window in that location. This is Powershell if you&rsquo;re using Windows - I installed on Windows rather than WSL, but I would use WSL if installing again (once I can solve that ssh problem). You can cd into the folder; I more often navigate in File Explorer and use the right-click context menu to open a Windows Terminal window there. Now with a command line open in the correct folder, run &lsquo;hugo new site&rsquo;. Answer the questions honestly and don&rsquo;t worry too much about the answers, we&rsquo;ll be going straight into the settings anyway. This will generate a bunch of files and folders with which you will become very familiar. Hopefully I can save you a little reading on that front.</p>
 <p>For now, just copy the theme you want to use into the new directory &lsquo;themes&rsquo;. Now you&rsquo;re ready to go. You can generate a test page at this point with the hugo new test.md command. The settings (front matter) in this page won&rsquo;t be what you want them to at this point, but we&rsquo;re about to change that.</p>
-<h4 id="what-does-hugo-do">What does Hugo do?</h4>
+<h4 id="what-does-hugo-do">What does Hugo do?<a href="#what-does-hugo-do" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Hugo&rsquo;s primary purpose is to make the HTML and CSS files that will make up your site. That&rsquo;s not all it can do, but we will ignore the rest for now.</p>
-<h4 id="what-input-does-hugo-take">What input does Hugo take?</h4>
+<h4 id="what-input-does-hugo-take">What input does Hugo take?<a href="#what-input-does-hugo-take" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Hugo&rsquo;s input comes from four places:</p>
 <ol>
 <li>The &lsquo;content&rsquo; folder, where you will store your written files. These files will be in the CommonMark Markdown format, which you can learn in a few minutes. If you can do all the tricks with text on Reddit, you&rsquo;re already proficient in CommonMark*.</li>
@@ -92,7 +116,7 @@ Note: I installed using Chocolatey, but this isn&rsquo;t necessary or important 
 <li>The config file, which is located at the root of your document, and will be written in YAML, TOML or JSON - simple and self-explanatory languages that you won&rsquo;t need experience to work with.</li>
 <li>The files and folders which you will use to customise your theme. These branch off from your root folder, and replicate files and folders in your &lsquo;themes&rsquo; folder. These will be preferred over your theme&rsquo;s settings but your theme will apply if nothing is found here. More on these later, for now let&rsquo;s look at your config file.</li>
 </ol>
-<h3 id="your-config-file">Your config file</h3>
+<h3 id="your-config-file">Your config file<a href="#your-config-file" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Hugo will have created this for you when you ran &lsquo;new site&rsquo;. However it will have the default info in it, which is unlikely to be compatible with your theme. So, you&rsquo;ll need to dive into the documentation for the theme to find compatible settings. You&rsquo;re likely to find these in the readme in the theme&rsquo;s root folder, and another example in the theme&rsquo;s example site if provided. Open these files (in a suitable text editor such as Sublime Text 3, Visual Studio Code, or NotePad++) and hold them to one side. Finally, open your own config file and get to work. I&rsquo;ll provide mine, which is in TOML, as a third reference which might be useful:</p>
 <pre><code>baseURL = &quot;https://darkhorsemechanisms.github.io./&quot;
 relativeURLs  = true
@@ -215,49 +239,23 @@ buildExpired = true
 </ol>
 <p>You can now deploy to GitHub Pages. From the root directory (where your config file is), run the &lsquo;hugo&rsquo; command. Navigate to /public (using the cd ./p* command to save time) and run git init. Next you&rsquo;ll need a repo in your GitHub called &lsquo;yourusername&rsquo;.github.io. and to go into settings in that repo to activate it as a website. Finally, push the local repo holding your site into that remote GitHub repo. Your site will shortly be available at yourusername.github.io.</p>
 <p>Next we will talk about getting more granular than the config file, when it comes to customising your website. This will involve looking at the folders making up your site in more detail. I am indebted to Jake Weisler for much of my understanding of this; his discussion can be found <a href="https://www.jakewiesler.com/blog/hugo-directory-structure/">here</a>.</p>
-<p>This post is long enough so I&rsquo;m starting a second one titled <a href="/posts/techblog/hugo-customisation">Hugo Site Customisation - Beyond the Config File</a>.</p>
-]]></content>
-		</item>
-		
-		<item>
-			<title>Links</title>
-			<link>https://darkhorsemechanisms.github.io./posts/links/</link>
-			<pubDate>Tue, 09 Jun 2020 07:32:22 +0100</pubDate>
-			
-			<guid>https://darkhorsemechanisms.github.io./posts/links/</guid>
-			<description>I&amp;rsquo;m recording this link library for myself but others may find it useful.
-Most resources are free. Recommendations within sites can be found on the profiles. Some links are duplicated in sections for my own workflow.
-Hard links to the subsections are in this post, the list below this post shows the most recent additions.
- Social Media (I keep this list on my &amp;lsquo;About&amp;rsquo; page) Education eBooks Thought Hubs Programming Lifestyle Software  </description>
-			<content type="html"><![CDATA[<p>I&rsquo;m recording this link library for myself but others may find it useful.</p>
-<p>Most resources are free. Recommendations within sites can be found on the profiles. Some links are duplicated in sections for my own workflow.</p>
-<p>Hard links to the subsections are in this post, the list below this post shows the most recent additions.</p>
-<ol>
-<li><a href="/posts/about">Social Media (I keep this list on my &lsquo;About&rsquo; page)</a></li>
-<li><a href="/posts/links/education">Education</a></li>
-<li><a href="/posts/links/ebooks">eBooks</a></li>
-<li><a href="/posts/links/thoughthubs">Thought Hubs</a></li>
-<li><a href="/posts/links/programming">Programming</a></li>
-<li><a href="/posts/links/lifestyle">Lifestyle</a></li>
-<li><a href="/posts/links/software">Software</a></li>
-</ol>
-]]></content>
-		</item>
-		
-		<item>
-			<title>About</title>
-			<link>https://darkhorsemechanisms.github.io./posts/about/</link>
-			<pubDate>Mon, 08 Jun 2020 15:20:17 +0100</pubDate>
-			
-			<guid>https://darkhorsemechanisms.github.io./posts/about/</guid>
-			<description>I built this website to store, organise and share all my work for the DarkHorseMechanisms project. This is a creative project meant to house all of my output for professional and personal development. Some of it may not make sense to you, or it may offend you, or you may wonder why I&amp;rsquo;m doing some or any of it. Nevertheless it is here and you may read it. Some of it is art and I will try to make the distinction clear; when I&amp;rsquo;m talking about facts or my beliefs, or offering guidance, I am speaking sincerely and sometimes with great urgency.</description>
-			<content type="html"><![CDATA[<p>I built this website to store, organise and share all my work for the DarkHorseMechanisms project. This is a creative project meant to house all of my output for professional and personal development. Some of it may not make sense to you, or it may offend you, or you may wonder why I&rsquo;m doing some or any of it. Nevertheless it is here and you may read it. Some of it is art and I will try to make the distinction clear; when I&rsquo;m talking about facts or my beliefs, or offering guidance, I am speaking sincerely and sometimes with great urgency. Sometimes I will be trying to leave a legacy of truth for my children. It is inevitable that I will often be wrong.</p>
-<p>I&rsquo;ve kept it relatively anonymous to preserve my ability to speak and create freely without judgement in my personal life and future career. I do welcome discourse.</p>
-<p>This website contains a useful <a href="/links">link library</a> - selections from my own bookmarks stored here for my use and yours. Almost all of the resources and links are free or contain free content.</p>
-<p>This site was made using <a href="https://gohugo.io">Hugo</a> and the <a href="https://themes.gohugo.io/hermit/">hermit theme</a> by <a href="https://github.com/Track3/hermit">Track3</a>(<a href="https://github.com/Track3/hermit/blob/master/LICENSE">License</a>).</p>
-<p>You can read about how I did it, why I&rsquo;m using Hugo, and why I&rsquo;m using static site generation with GitHub Pages <a href="posts/writing/techblog/hugo">here</a>. Or click <a href="/posts">here</a> to see a list of recent posts.</p>
-]]></content>
-		</item>
-		
-	</channel>
-</rss>
+<p>This post is long enough so I&rsquo;m starting a second one titled <a href="../../../posts/techblog/hugo-customisation">Hugo Site Customisation - Beyond the Config File</a>.</p>
+
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="https://darkhorsemechanisms.github.io./">DarkHorseMechanisms</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://darkhorsemechanisms.github.io./posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://darkhorsemechanisms.github.io./js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>
