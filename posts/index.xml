@@ -15,8 +15,10 @@
 			<pubDate>Fri, 12 Jun 2020 02:58:05 +0100</pubDate>
 			
 			<guid>https://darkhorsemechanisms.github.io./posts/techblog/</guid>
-			<description>Documenting (parts of) my experience as a programmer.</description>
+			<description>Documenting (parts of) my experience as a programmer.
+First post - Hugo and this site</description>
 			<content type="html"><![CDATA[<p>Documenting (parts of) my experience as a programmer.</p>
+<p>First post - <a href="./hugo">Hugo and this site</a></p>
 ]]></content>
 		</item>
 		
